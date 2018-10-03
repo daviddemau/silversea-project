@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>SilverSea Project</title>
+  <link rel="stylesheet" href="silversea.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+  <header></header>
+  <div class="main">
+    <div class="filters">
+      <div class="filterTag">Destinations<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <input type="text" name="search" autocomplete="off" placeholder="Browse destinations..">
+        <div class="form" id='destinations'>
+        </div>
+        </div>
+        <div class="filterTag">Dates<ion-icon name="add"></ion-icon></div>
+        <div id="filterDetails">
+          <fieldset>
+            <legend>Choose trip dates</legend>
+            <div>
+              <label for="start">Start</label>
+              <input type="date" id="start" name="trip"
+              value="2018-07-22"
+              min="2018-01-01" max="2018-12-31" />
+            </div>
+            <div>
+              <label for="end">End</label>
+              <input type="date" id="end" name="trip"
+              value="2018-07-29"
+              min="2018-01-01" max="2018-12-31"/ >
+            </div>
+          </fieldset>
+        </div>
+        <div class="filterTag">Ship<ion-icon name="add"></ion-icon></div>
+        <div id="filterDetails">
+          <input autocomplete="off" type="text" name="search" placeholder="Browse ships..">
+        </div>
+        <div class="filterTag">Cruise type<ion-icon name="add"></ion-icon></div>
+        <div id="filterDetails">
+          <div class="form" id="cruises">
+            <label class="boxes">
+              <input type="checkbox" />
+              <span>Silversea cruises</span>
+            </label>
+            <label class="boxes">
+              <input type="checkbox" />
+              <span>Silversea expeditions</span>
+            </label>
+          </div>
+        </div>
+        <div class="filterTag">Port<ion-icon name="add"></ion-icon></div>
+        <div id="filterDetails">
+          <input type="text" name="search" autocomplete="off" placeholder="Browse ports..">
+          <div class="form" id="ports">
+          </div>
+        </div>
+        <div class="filterTag">More<ion-icon name="add"></ion-icon></div>
+        <div id="filterDetails">
+
+          <div class="form" id="cruises">
+            <label class="boxes">
+              <input type="checkbox" />
+              <span>Bridge sailings</span>
+            </label>
+            <label class="boxes">
+              <input type="checkbox" />
+              <span>Culinary expeditions</span>
+            </label>
+            <label class="boxes">
+              <input type="checkbox" />
+              <span>Gentlemen hosts</span>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="results">
+        <div class="result" id="itemsFound">
+          <span>Found <strong>25</strong> cruises</span>
+          <span>Sort by (choose sorting)</span>
+        </div>
+        <div class="result">dzdzdz</div>
+        <div class="result">dzdzdz</div>
+        <div class="result">dzdzdz</div>
+        <div class="result">dzdzdz</div>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+    <script src="silversea.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,182 @@
+/* -------------------------------------------------- */
+/* MAIN SETTINGS */
+/* -------------------------------------------------- */
+
+
+body {
+  background-color: rgb(245, 245, 245)
+}
+
+header {
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  height: 30px;
+}
+
+.main {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+}
+
+/* -------------------------------------------------- */
+/* FILTERS COLUMN */
+/* -------------------------------------------------- */
+
+
+.filters {
+  background: white;
+  margin: 5px 5px 5px 0px;
+  height: min-content;
+  flex: 1.3;
+}
+
+
+.filterTag {
+  padding: 25px;
+  border-bottom: 1px solid rgb(246, 246, 246);
+}
+
+#filterDetails {
+  display: none;
+}
+
+.endFilters {
+  background-color: rgb(245, 245, 245)
+}
+
+ion-icon {
+  float: right;
+  transition: all 0.3s;
+  font-size: 20px;
+  color: grey;
+}
+
+/* -------------------------------------------------- */
+/* SEARCH BAR */
+/* -------------------------------------------------- */
+
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+/* -------------------------------------------------- */
+/* CHECKBOXES */
+/* -------------------------------------------------- */
+
+.boxes {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.boxes span {
+  width: 100%;
+  font-size: 1.1em !important;
+  margin-top: 10px;
+}
+
+.form {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+#cruises {
+  height: auto;
+}
+
+/* -------------------------------------------------- */
+/* CHOOSE DATES  */
+/* -------------------------------------------------- */
+
+
+legend {
+    background-color: rgb(237, 237, 237);
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+}
+
+fieldset {
+margin: 20px;
+}
+
+/* -------------------------------------------------- */
+/* RESULTS COLUMN */
+/* -------------------------------------------------- */
+
+
+.results {
+  background: white;
+  margin: 5px 0px 5px 5px;
+  height: min-content;
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+.result {
+  padding: 60px;
+  border-bottom: 1px solid rgb(246, 246, 246);
+}
+
+#itemsFound {
+  padding: 15px;
+}
+
+#itemsFound span:nth-child(2) {
+  float: right;
+}
+
+/* -------------------------------------------------- */
+/* PAGINATION */
+/* -------------------------------------------------- */
+
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #d60524;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
