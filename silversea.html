@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>SilverSea Project</title>
+  <title>Silversea Project - David Demau</title>
   <link rel="stylesheet" href="silversea.css">
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -11,103 +11,133 @@
   <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 </head>
 <body>
   <header></header>
   <div class="main">
     <div class="filters">
-      <div class="filterTag">Destinations<ion-icon name="add"></ion-icon></div>
+      <div class="filterTag">Destination<ion-icon name="add"></ion-icon></div>
       <div id="filterDetails">
         <input type="text" name="search" autocomplete="off" placeholder="Browse destinations..">
         <div class="form" id='destinations'>
         </div>
-        </div>
-        <div class="filterTag">Dates<ion-icon name="add"></ion-icon></div>
-        <div id="filterDetails">
-          <fieldset>
-            <legend>Choose trip dates</legend>
-            <div>
-              <label for="start">Start</label>
-              <input type="date" id="start" name="trip"
-              value="2018-07-22"
-              min="2018-01-01" max="2018-12-31" />
-            </div>
-            <div>
-              <label for="end">End</label>
-              <input type="date" id="end" name="trip"
-              value="2018-07-29"
-              min="2018-01-01" max="2018-12-31"/ >
-            </div>
-          </fieldset>
-        </div>
-        <div class="filterTag">Ship<ion-icon name="add"></ion-icon></div>
-        <div id="filterDetails">
-          <input autocomplete="off" type="text" name="search" placeholder="Browse ships..">
-        </div>
-        <div class="filterTag">Cruise type<ion-icon name="add"></ion-icon></div>
-        <div id="filterDetails">
-          <div class="form" id="cruises">
-            <label class="boxes">
-              <input type="checkbox" />
-              <span>Silversea cruises</span>
-            </label>
-            <label class="boxes">
-              <input type="checkbox" />
-              <span>Silversea expeditions</span>
-            </label>
+      </div>
+      <div class="filterTag">Dates<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <fieldset>
+          <legend>Choose trip dates</legend>
+          <div>
+            <label for="start">Start</label>
+            <input type="date" id="start" name="trip"
+            value="2018-07-22"
+            min="2018-01-01" max="2018-12-31" />
           </div>
-        </div>
-        <div class="filterTag">Port<ion-icon name="add"></ion-icon></div>
-        <div id="filterDetails">
-          <input type="text" name="search" autocomplete="off" placeholder="Browse ports..">
-          <div class="form" id="ports">
+          <div>
+            <label for="end">End</label>
+            <input type="date" id="end" name="trip"
+            value="2018-07-29"
+            min="2018-01-01" max="2018-12-31"/ >
           </div>
-        </div>
-        <div class="filterTag">More<ion-icon name="add"></ion-icon></div>
-        <div id="filterDetails">
-
-          <div class="form" id="cruises">
-            <label class="boxes">
-              <input type="checkbox" />
-              <span>Bridge sailings</span>
-            </label>
-            <label class="boxes">
-              <input type="checkbox" />
-              <span>Culinary expeditions</span>
-            </label>
-            <label class="boxes">
-              <input type="checkbox" />
-              <span>Gentlemen hosts</span>
-            </label>
-          </div>
-
+        </fieldset>
+      </div>
+      <div class="filterTag">Ship<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <input autocomplete="off" type="text" name="search" placeholder="Browse ships..">
+        <div class="form">
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Discoverer</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Shadow</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Muse</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Whisper</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Galapagos</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silver Spirit</span>
+          </label>
         </div>
       </div>
-      <div class="results">
-        <div class="result" id="itemsFound">
-          <span>Found <strong>25</strong> cruises</span>
-          <span>Sort by (choose sorting)</span>
+      <div class="filterTag">Cruise type<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <div class="form" id="cruises">
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silversea cruises</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Silversea expeditions</span>
+          </label>
         </div>
-        <div class="result">dzdzdz</div>
-        <div class="result">dzdzdz</div>
-        <div class="result">dzdzdz</div>
-        <div class="result">dzdzdz</div>
+      </div>
+      <div class="filterTag">Port<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <input type="text" name="search" autocomplete="off" placeholder="Browse ports..">
+        <div class="form" id="ports">
+        </div>
+      </div>
+      <div class="filterTag">More<ion-icon name="add"></ion-icon></div>
+      <div id="filterDetails">
+        <div class="form" id="cruises">
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Bridge sailings</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Culinary expeditions</span>
+          </label>
+          <label class="boxes">
+            <input type="checkbox" />
+            <span>Gentlemen hosts</span>
+          </label>
+          <label class="boxes" id="more">
+            <input type="checkbox" />
+            <span>wine series voyage</span>
+          </label>
+        </div>
       </div>
     </div>
-    <div class="pagination">
-      <a href="#">&laquo;</a>
-      <a href="#" class="active">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">&raquo;</a>
+    <div class="results">
+      <div class="result" id="itemsFound">
+        <span>Found <strong>25</strong> cruises</span>
+        <div class="filter-buy">
+          <span>Sort by</span>
+          <select>
+            <option selected value="Departure">Departure</option>
+            <option value="Price">Price</option>
+            <option value="Duration" >Duration</option>
+          </select>
+        </div>
+      </div>
+      <div class="result" id="cruise"></div>
     </div>
-    <script src="silversea.js"></script>
-  </body>
-  </html>
+  </div>
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+  <script src="silversea.js"></script>
+</body>
+</html>
